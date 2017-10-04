@@ -367,6 +367,8 @@ func DetalleGet(ctx *iris.Context) {
 			Send.Expresion.ECodigoBarraExpresion.CodigoBarra = e.Expresion[1:3]
 			Send.SMsj = "Expresion regular localizada..."
 			Send.SEstado = true
+		
+
 		}
 	} else {
 		ctx.Redirect("/Respuestas", 301)
